@@ -2,27 +2,27 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Download, Settings, MessageSquare, Zap, Shield, Brain, Code, Globe, Maximize, Minimize } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Download, Settings, MessageSquare, Zap, Shield, Brain, Code, Globe, Maximize, Minimize, LucideIcon } from 'lucide-react';
 import Image from 'next/image';
 
 interface SlideFeature {
   name: string;
   description: string;
-  icon: any;
+  icon: LucideIcon;
   details: string;
 }
 
 interface SlideAdvanced {
   title: string;
   description: string;
-  icon: any;
+  icon: LucideIcon;
   points: string[];
 }
 
 interface SlideStep {
   title: string;
   description: string;
-  icon: any;
+  icon: LucideIcon;
 }
 
 interface SlideContent {
